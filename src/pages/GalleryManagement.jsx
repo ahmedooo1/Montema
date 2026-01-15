@@ -175,7 +175,7 @@ export default function GalleryManagement() {
                 className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-[#D4AF37]"
               >
                 {categories.map(cat => (
-                  <option key={cat} value={cat}>{cat}</option>
+                  <option key={cat} value={cat} className="bg-gray-800 text-white">{cat}</option>
                 ))}
               </select>
             </div>
@@ -186,8 +186,8 @@ export default function GalleryManagement() {
                 onChange={(e) => setFormData({ ...formData, media_type: e.target.value })}
                 className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-[#D4AF37]"
               >
-                <option value="image">Image</option>
-                <option value="video">Vidéo</option>
+                <option value="image" className="bg-gray-800 text-white">Image</option>
+                <option value="video" className="bg-gray-800 text-white">Vidéo</option>
               </select>
             </div>
             <div className="md:col-span-2">
