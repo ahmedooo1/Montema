@@ -1,10 +1,16 @@
-# Montema – Site vitrine
+# Montema – Menusier
 
 Landing page React + TypeScript + Vite pour l'atelier de menuiserie Montema. L'interface utilise Tailwind CSS et les icônes lucide-react pour présenter les services, réalisations, avis clients et un formulaire de contact.
 
-## Démarrer
+## Démarrer front
 
 ```bash
+npm install
+npm run dev
+```
+## Démarrer backend
+```bash
+cd /server
 npm install
 npm run dev
 ```
@@ -22,3 +28,4 @@ npm run dev
 - Vite
 - Tailwind CSS
 - lucide-react
+- Nodejs
