@@ -29,7 +29,7 @@ export default function AdminLayout() {
       {/* Sidebar - Desktop */}
       <aside className="hidden md:flex fixed left-0 top-0 h-full w-64 bg-[#1a1f2e]/95 backdrop-blur-xl border-r border-white/10 flex-col p-6 z-50">
         <div className="mb-8">
-          <h1 className="text-2xl font-bold text-white">Montama Admin</h1>
+          <h1 className="text-2xl font-bold text-white">Montema Admin</h1>
           <p className="text-sm text-gray-400 mt-1">{admin?.username}</p>
         </div>
 
@@ -39,10 +39,9 @@ export default function AdminLayout() {
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
-                  isActive
-                    ? 'bg-[#D4AF37] text-[#0A0F1C]'
-                    : 'text-gray-300 hover:bg-white/5'
+                `flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive
+                  ? 'bg-[#D4AF37] text-[#0A0F1C]'
+                  : 'text-gray-300 hover:bg-white/5'
                 }`
               }
             >
@@ -63,7 +62,7 @@ export default function AdminLayout() {
 
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 left-0 right-0 bg-[#1a1f2e]/95 backdrop-blur-xl border-b border-white/10 p-4 z-50 flex items-center justify-between">
-        <h1 className="text-xl font-bold text-white">Montama Admin</h1>
+        <h1 className="text-xl font-bold text-white">Montema Admin</h1>
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
           className="text-white p-2"
@@ -91,10 +90,9 @@ export default function AdminLayout() {
                   to={item.path}
                   onClick={() => setSidebarOpen(false)}
                   className={({ isActive }) =>
-                    `flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
-                      isActive
-                        ? 'bg-[#D4AF37] text-[#0A0F1C]'
-                        : 'text-gray-300 hover:bg-white/5'
+                    `flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${isActive
+                      ? 'bg-[#D4AF37] text-[#0A0F1C]'
+                      : 'text-gray-300 hover:bg-white/5'
                     }`
                   }
                 >

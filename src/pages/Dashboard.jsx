@@ -62,7 +62,7 @@ export default function Dashboard() {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-bold text-white mb-2">Dashboard</h1>
-        <p className="text-gray-400">Vue d'ensemble de votre site Montama</p>
+        <p className="text-gray-400">Vue d'ensemble de votre site Montema</p>
       </div>
 
       {/* Stats Grid */}

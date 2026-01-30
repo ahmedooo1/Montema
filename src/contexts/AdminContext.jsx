@@ -17,7 +17,7 @@ export const AdminProvider = ({ children }) => {
 
   useEffect(() => {
     // Check if admin is logged in (from localStorage)
-    const savedAdmin = localStorage.getItem('montama_admin');
+    const savedAdmin = localStorage.getItem('montema_admin');
     if (savedAdmin) {
       setAdmin(JSON.parse(savedAdmin));
     }
@@ -36,7 +36,7 @@ export const AdminProvider = ({ children }) => {
 
       if (data.success) {
         setAdmin(data.user);
-        localStorage.setItem('montama_admin', JSON.stringify(data.user));
+        localStorage.setItem('montema_admin', JSON.stringify(data.user));
         return { success: true };
       } else {
         return { success: false, message: data.message };
@@ -48,7 +48,7 @@ export const AdminProvider = ({ children }) => {
 
   const logout = () => {
     setAdmin(null);
-    localStorage.removeItem('montama_admin');
+    localStorage.removeItem('montema_admin');
   };
 
   return (

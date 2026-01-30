@@ -295,7 +295,7 @@ function App({ onNavigate }: LandingPageProps) {
               <span className="text-amber-500">façonné pour vous.</span>
             </h1>
             <p className="text-lg md:text-xl text-stone-300 mb-10 leading-relaxed">
-              Montama transforme vos intérieurs avec des créations sur-mesure : cuisines, dressings, bibliothèques
+              Montema transforme vos intérieurs avec des créations sur-mesure : cuisines, dressings, bibliothèques
               et montage de mobilier de haute qualité.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -346,7 +346,7 @@ function App({ onNavigate }: LandingPageProps) {
               <h2 className="text-sm font-bold text-amber-700 tracking-[0.2em] uppercase mb-3">À Propos</h2>
               <p className="text-3xl md:text-4xl font-bold text-stone-900 mb-8">L'excellence artisanale depuis 2012</p>
               <p className="text-lg text-stone-600 leading-relaxed mb-6">
-                Montama est née de la passion de créer des espaces de vie uniques et fonctionnels. 
+                Montema est née de la passion de créer des espaces de vie uniques et fonctionnels. 
                 Avec plus de 12 ans d'expérience dans la menuiserie sur-mesure, nous mettons notre 
                 savoir-faire au service de vos projets les plus ambitieux.
               </p>
@@ -619,7 +619,7 @@ function App({ onNavigate }: LandingPageProps) {
                 ))}
               </div>
               <p className="text-2xl md:text-3xl font-medium text-stone-800 leading-snug mb-8 italic">
-                "Nous avons fait appel à Montama pour la réalisation complète de notre cuisine et d'une bibliothèque
+                "Nous avons fait appel à Montema pour la réalisation complète de notre cuisine et d'une bibliothèque
                 sur-mesure. Le résultat dépasse nos attentes. Précision, ponctualité et une finition impeccable."
               </p>
               <div>
@@ -655,7 +655,7 @@ function App({ onNavigate }: LandingPageProps) {
                   </div>
                   <div>
                     <p className="text-sm font-bold text-stone-400 uppercase tracking-wider mb-1">Email</p>
-                    <p className="text-xl font-bold text-stone-900">contact@montama.fr</p>
+                    <p className="text-xl font-bold text-stone-900">contact@montema.fr</p>
                   </div>
                 </div>
 
@@ -797,7 +797,7 @@ function App({ onNavigate }: LandingPageProps) {
           </div>
 
           <div className="pt-12 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-stone-500 text-sm">© 2024 Montama Menuiserie. Tous droits réservés.</p>
+            <p className="text-stone-500 text-sm">© 2024 Montema Menuiserie. Tous droits réservés.</p>
             <div className="flex gap-8 text-stone-500 text-sm">
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-amber-500" /> Artisan Qualifié

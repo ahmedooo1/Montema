@@ -68,7 +68,7 @@ function FAQPage({ onNavigate, scrollToSection }: FAQPageProps) {
       {/* Navigation */}
       <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm py-3">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <button 
+          <button
             onClick={() => onNavigate('home')}
             className="flex items-center gap-2"
           >
@@ -100,7 +100,7 @@ function FAQPage({ onNavigate, scrollToSection }: FAQPageProps) {
             Tout ce que vous devez savoir sur nos services
           </h1>
           <p className="text-lg text-stone-600 leading-relaxed max-w-2xl mx-auto">
-            Retrouvez ici les réponses aux questions les plus fréquemment posées sur nos services de menuiserie sur-mesure, 
+            Retrouvez ici les réponses aux questions les plus fréquemment posées sur nos services de menuiserie sur-mesure,
             nos délais, nos garanties et notre processus de travail.
           </p>
         </div>
@@ -118,9 +118,8 @@ function FAQPage({ onNavigate, scrollToSection }: FAQPageProps) {
                 >
                   <span className="font-bold text-stone-900 pr-4">{faq.q}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-amber-700 flex-shrink-0 transition-transform ${
-                      openFaqIndex === index ? 'rotate-180' : ''
-                    }`}
+                    className={`w-5 h-5 text-amber-700 flex-shrink-0 transition-transform ${openFaqIndex === index ? 'rotate-180' : ''
+                      }`}
                   />
                 </button>
                 {openFaqIndex === index && (
@@ -169,7 +168,7 @@ function FAQPage({ onNavigate, scrollToSection }: FAQPageProps) {
                 </div>
                 <div>
                   <p className="text-sm text-stone-300 mb-1">Envoyez-nous un email</p>
-                  <p className="text-xl font-bold">contact@montama.fr</p>
+                  <p className="text-xl font-bold">contact@montema.fr</p>
                 </div>
               </div>
               <p className="text-stone-300 text-sm">
@@ -201,7 +200,7 @@ function FAQPage({ onNavigate, scrollToSection }: FAQPageProps) {
             <span className="text-2xl font-bold tracking-tighter">MONTAMA</span>
           </div>
           <p className="text-stone-400 text-sm">
-            © 2024 Montama Menuiserie. Tous droits réservés.
+            © 2024 Montema Menuiserie. Tous droits réservés.
           </p>
         </div>
       </footer>

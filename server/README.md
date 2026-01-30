@@ -1,6 +1,6 @@
-# Montama API Server
+# Montema API Server
 
-Backend API pour le site Montama avec MySQL.
+Backend API pour le site Montema avec MySQL.
 
 ## Installation
 

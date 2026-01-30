@@ -1,5 +1,5 @@
 -- Create admin users table
-USE montama_db;
+USE montema_db;
 
 CREATE TABLE IF NOT EXISTS admin_users (
   id INT PRIMARY KEY AUTO_INCREMENT,
@@ -12,4 +12,4 @@ CREATE TABLE IF NOT EXISTS admin_users (
 -- Insert default admin (password: Admin123!)
 -- In production, use bcrypt to hash passwords
 INSERT INTO admin_users (username, password, email) VALUES
-('admin', 'Admin123!', 'admin@montama.fr');
+('admin', 'Admin123!', 'admin@montema.fr');

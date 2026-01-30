@@ -1,6 +1,6 @@
 -- Create database
-CREATE DATABASE IF NOT EXISTS montama_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE montama_db;
+CREATE DATABASE IF NOT EXISTS montema_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE montema_db;
 
 -- Services table
 CREATE TABLE IF NOT EXISTS services (

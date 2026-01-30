@@ -37,7 +37,7 @@ export default function AdminLogin() {
         <div className="bg-[#1a1f2e]/80 backdrop-blur-xl border border-white/10 p-8 rounded-2xl shadow-2xl">
           {/* Logo/Title */}
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-white mb-2">Montama Admin</h1>
+            <h1 className="text-3xl font-bold text-white mb-2">Montema Admin</h1>
             <p className="text-gray-400">Connexion à l'espace administrateur</p>
           </div>
 
