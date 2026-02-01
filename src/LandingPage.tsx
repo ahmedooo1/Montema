@@ -27,6 +27,7 @@ import {
   ZoomIn
 } from 'lucide-react'
 import './App.css'
+import ChatbotFAQ from './components/ChatbotFAQ'
 
 interface LandingPageProps {
   onNavigate: (page: string) => void;
@@ -216,7 +217,7 @@ function App({ onNavigate }: LandingPageProps) {
                 !scrolled ? 'text-white' : 'text-stone-900'
               }`}
             >
-              MONTAMA
+              MONTEMA
             </span>
           </div>
 
@@ -757,7 +758,7 @@ function App({ onNavigate }: LandingPageProps) {
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-6">
                 <Hammer className="w-8 h-8 text-amber-500" />
-                <span className="text-3xl font-bold tracking-tighter">MONTAMA</span>
+                <span className="text-3xl font-bold tracking-tighter">MONTEMA</span>
               </div>
               <p className="text-stone-400 max-w-sm mb-6">
                 Menuiserie d'excellence à Rouen. Nous transformons vos idées en bois véritable pour créer des espaces de
@@ -809,6 +810,9 @@ function App({ onNavigate }: LandingPageProps) {
           </div>
         </div>
       </footer>
+
+      {/* Chatbot FAQ */}
+      <ChatbotFAQ />
     </div>
   )
 }

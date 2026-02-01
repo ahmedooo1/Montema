@@ -76,7 +76,7 @@ function FAQPage({ onNavigate, scrollToSection }: FAQPageProps) {
               <Hammer className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-bold tracking-tighter text-stone-900">
-              MONTAMA
+              MONTEMA
             </span>
           </button>
 
@@ -197,7 +197,7 @@ function FAQPage({ onNavigate, scrollToSection }: FAQPageProps) {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Hammer className="w-6 h-6 text-amber-500" />
-            <span className="text-2xl font-bold tracking-tighter">MONTAMA</span>
+            <span className="text-2xl font-bold tracking-tighter">MONTEMA</span>
           </div>
           <p className="text-stone-400 text-sm">
             © 2024 Montema Menuiserie. Tous droits réservés.
