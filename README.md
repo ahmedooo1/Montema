@@ -1,4 +1,4 @@
-# Montema – Menusier
+# Montema – Menuisier
 
 Landing page React + TypeScript + Vite pour l'atelier de menuiserie Montema. L'interface utilise Tailwind CSS et les icônes lucide-react pour présenter les services, réalisations, avis clients et un formulaire de contact.
 
