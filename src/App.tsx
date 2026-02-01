@@ -9,6 +9,11 @@ import GalleryManagement from './pages/GalleryManagement';
 import ContactsManagement from './pages/ContactsManagement';
 import LandingPage from './LandingPage';
 import FAQPage from './pages/FAQPage';
+import CookiesPolicy from './pages/CookiesPolicy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import CookieSettings from './pages/CookieSettings';
+import CookieBanner from './components/CookieBanner';
 import { useState } from 'react';
 
 function App() {
@@ -33,6 +38,7 @@ function App() {
   return (
     <BrowserRouter>
       <AdminProvider>
+        <CookieBanner />
         <Routes>
           {/* Public Route - Landing Page */}
           <Route 
@@ -44,6 +50,24 @@ function App() {
                 <FAQPage onNavigate={handleNavigate} scrollToSection={scrollToSection} />
               )
             } 
+          />
+
+          {/* Policy Pages */}
+          <Route 
+            path="/politique-cookies" 
+            element={<CookiesPolicy onNavigate={handleNavigate} />} 
+          />
+          <Route 
+            path="/politique-confidentialite" 
+            element={<PrivacyPolicy onNavigate={handleNavigate} />} 
+          />
+          <Route 
+            path="/conditions-utilisation" 
+            element={<TermsOfService onNavigate={handleNavigate} />} 
+          />
+          <Route 
+            path="/parametres-cookies" 
+            element={<CookieSettings onNavigate={handleNavigate} />} 
           />
 
           {/* Admin Login */}

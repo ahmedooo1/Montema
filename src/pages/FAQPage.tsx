@@ -194,14 +194,53 @@ function FAQPage({ onNavigate, scrollToSection }: FAQPageProps) {
 
       {/* Footer */}
       <footer className="bg-stone-950 text-white py-12 border-t border-stone-800">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Hammer className="w-6 h-6 text-amber-500" />
-            <span className="text-2xl font-bold tracking-tighter">MONTEMA</span>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div className="flex flex-col items-center md:items-start">
+              <div className="flex items-center gap-2 mb-4">
+                <Hammer className="w-6 h-6 text-amber-500" />
+                <span className="text-2xl font-bold tracking-tighter">MONTEMA</span>
+              </div>
+              <p className="text-stone-400 text-sm text-center md:text-left">
+                Menuiserie d'excellence à Rouen
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-4">Services</h4>
+              <ul className="space-y-2 text-stone-400 text-sm">
+                <li className="hover:text-amber-500 cursor-pointer transition-colors">Cuisines</li>
+                <li className="hover:text-amber-500 cursor-pointer transition-colors">Dressings</li>
+                <li className="hover:text-amber-500 cursor-pointer transition-colors">Meubles</li>
+                <li className="hover:text-amber-500 cursor-pointer transition-colors">Bureaux</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-4">Naviguer</h4>
+              <ul className="space-y-2 text-stone-400 text-sm">
+                <li onClick={() => onNavigate('home')} className="hover:text-amber-500 cursor-pointer transition-colors">Accueil</li>
+                <li onClick={() => onNavigate('faq')} className="hover:text-amber-500 cursor-pointer transition-colors">FAQ</li>
+                <li className="hover:text-amber-500 cursor-pointer transition-colors">Galerie</li>
+                <li className="hover:text-amber-500 cursor-pointer transition-colors">Contact</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-4">Légal</h4>
+              <ul className="space-y-2 text-stone-400 text-sm">
+                <li onClick={() => onNavigate('politique-confidentialite')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Confidentialité</li>
+                <li onClick={() => onNavigate('politique-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Cookies</li>
+                <li onClick={() => onNavigate('parametres-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Gérer les Cookies</li>
+              </ul>
+            </div>
           </div>
-          <p className="text-stone-400 text-sm">
-            © 2024 Montema Menuiserie. Tous droits réservés.
-          </p>
+
+          <div className="pt-8 border-t border-stone-800 flex flex-col md:flex-row md:items-center md:justify-between">
+            <p className="text-stone-400 text-sm">
+              © {new Date().getFullYear()} Montema Menuiserie. Tous droits réservés.
+            </p>
+          </div>
         </div>
       </footer>
     </div>

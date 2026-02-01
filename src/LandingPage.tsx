@@ -795,6 +795,15 @@ function App({ onNavigate }: LandingPageProps) {
                 <li onClick={() => scrollToSection('contact')} className="hover:text-amber-500 cursor-pointer transition-colors">Contact</li>
               </ul>
             </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-6">Légal</h4>
+              <ul className="space-y-4 text-stone-400">
+                <li onClick={() => onNavigate('politique-confidentialite')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Confidentialité</li>
+                <li onClick={() => onNavigate('politique-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Cookies</li>
+                <li onClick={() => onNavigate('parametres-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Gérer les Cookies</li>
+              </ul>
+            </div>
           </div>
 
           <div className="pt-12 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-6">
