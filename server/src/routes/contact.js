@@ -38,120 +38,106 @@ router.post('/', async (req, res) => {
                 margin: 0;
                 padding: 0;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: #f4f4f4;
+                background-color: #f5f0e8;
+                color: #1c1917;
               }
               .container {
                 max-width: 600px;
                 margin: 20px auto;
                 background-color: #ffffff;
-                border-radius: 10px;
+                border-radius: 12px;
                 overflow: hidden;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+                border: 1px solid #e7e1d5;
               }
               .header {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                color: #ffffff;
-                padding: 30px 20px;
+                background-color: #15120f;
+                color: #f5f0e8;
+                padding: 25px;
                 text-align: center;
               }
               .header h1 {
                 margin: 0;
-                font-size: 24px;
-                font-weight: 600;
+                font-size: 26px;
+                font-weight: 700;
               }
               .content {
-                padding: 30px;
+                padding: 35px;
               }
-              .info-card {
-                background-color: #f8f9fa;
-                border-left: 4px solid #667eea;
-                padding: 15px 20px;
-                margin-bottom: 20px;
-                border-radius: 5px;
+              .info-details {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 0;
+                border-bottom: 1px solid #e7e1d5;
+                gap: 8px;
               }
-              .info-card .label {
-                color: #667eea;
+              .info-details:last-child {
+                border-bottom: none;
+              }
+              .info-details .label {
                 font-weight: 600;
-                font-size: 12px;
-                text-transform: uppercase;
-                margin-bottom: 5px;
+                color: #78716c;
               }
-              .info-card .value {
-                color: #333333;
-                font-size: 16px;
-                line-height: 1.5;
+              .info-details .value {
+                font-weight: 500;
+                color: #1c1917;
               }
               .message-box {
-                background-color: #f8f9fa;
+                background-color: #fefce8;
+                border: 1px solid #fde047;
                 border-radius: 8px;
-                padding: 20px;
+                padding: 25px;
                 margin-top: 20px;
               }
               .message-box .label {
-                color: #667eea;
-                font-weight: 600;
-                font-size: 12px;
+                color: #1c1917;
+                font-weight: 700;
+                font-size: 14px;
                 text-transform: uppercase;
-                margin-bottom: 10px;
+                margin-bottom: 12px;
               }
               .message-box .text {
-                color: #333333;
+                color: #1c1917;
                 font-size: 15px;
-                line-height: 1.6;
+                line-height: 1.7;
                 white-space: pre-wrap;
               }
               .footer {
-                background-color: #f8f9fa;
-                color: #888888;
                 text-align: center;
                 padding: 20px;
                 font-size: 12px;
-              }
-              .badge {
-                display: inline-block;
-                background-color: #667eea;
-                color: #ffffff;
-                padding: 5px 15px;
-                border-radius: 20px;
-                font-size: 14px;
-                font-weight: 500;
+                color: #78716c;
+                background-color: #f5f5f4;
               }
             </style>
           </head>
           <body>
             <div class="container">
               <div class="header">
-                <h1>📬 Nouvelle Demande de Contact</h1>
-                <p style="margin: 10px 0 0 0; opacity: 0.9;">Vous avez reçu une nouvelle demande de devis</p>
+                <h1>Nouvelle demande de contact</h1>
               </div>
-              
               <div class="content">
                 <div class="info-card">
-                  <div class="label">👤 Nom du client</div>
-                  <div class="value">${name}</div>
-                </div>
-                
-                <div class="info-card">
-                  <div class="label">📱 Téléphone</div>
-                  <div class="value">${phone}</div>
-                </div>
-                
-                <div class="info-card">
-                  <div class="label">🏗️ Type de projet</div>
-                  <div class="value">
-                    <span class="badge">${project_type}</span>
+                  <div class="info-details">
+                    <span class="label">Nom: &nbsp;</span>
+                    <span class="value">${name}</span>
+                  </div>
+                  <div class="info-details">
+                    <span class="label">Téléphone: &nbsp;</span>
+                    <span class="value">${phone}</span>
+                  </div>
+                  <div class="info-details">
+                    <span class="label">Type de projet: &nbsp;</span>
+                    <span class="value">${project_type}</span>
                   </div>
                 </div>
-                
                 <div class="message-box">
-                  <div class="label">💬 Message du client</div>
+                  <div class="label">Message</div>
                   <div class="text">${message}</div>
                 </div>
               </div>
-              
               <div class="footer">
-                <p style="margin: 0;">Ce message a été envoyé automatiquement depuis le formulaire de contact</p>
-                <p style="margin: 10px 0 0 0;">© ${new Date().getFullYear()} Montema</p>
+                <p>Cet e-mail a été envoyé depuis le formulaire de contact de votre site web.</p>
               </div>
             </div>
           </body>

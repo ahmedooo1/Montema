@@ -1,6 +1,6 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useAdmin } from '../contexts/AdminContext';
-import { LayoutDashboard, Package, Image, Mail, LogOut, Menu, X } from 'lucide-react';
+import { LayoutDashboard, Package, Image, Mail, LogOut, Menu, X, Hammer } from 'lucide-react';
 import { useState } from 'react';
 
 export default function AdminLayout() {
@@ -29,8 +29,21 @@ export default function AdminLayout() {
       {/* Sidebar - Desktop */}
       <aside className="hidden md:flex fixed left-0 top-0 h-full w-64 bg-[#1a1f2e]/95 backdrop-blur-xl border-r border-white/10 flex-col p-6 z-50">
         <div className="mb-8">
-          <h1 className="text-2xl font-bold text-white">Montema Admin</h1>
-          <p className="text-sm text-gray-400 mt-1">{admin?.username}</p>
+          <div 
+            onClick={() => navigate('/')} 
+            className="flex items-center gap-2 cursor-pointer group mb-1"
+            title="Retour au site"
+          >
+            <div className="bg-[#D4AF37] p-1.5 rounded-lg group-hover:bg-[#b5952f] transition-colors">
+              <Hammer className="w-5 h-5 text-[#0A0F1C]" />
+            </div>
+            <h1 className="text-xl font-bold text-white group-hover:text-[#D4AF37] transition-colors">Montema</h1>
+          </div>
+          <p className="text-xs text-gray-500 uppercase tracking-wider font-semibold ml-1">Espace Admin</p>
+          <p className="text-sm text-gray-400 mt-2 ml-1 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-green-500"></span>
+            {admin?.username}
+          </p>
         </div>
 
         <nav className="flex-1 space-y-2">
@@ -62,7 +75,12 @@ export default function AdminLayout() {
 
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 left-0 right-0 bg-[#1a1f2e]/95 backdrop-blur-xl border-b border-white/10 p-4 z-50 flex items-center justify-between">
-        <h1 className="text-xl font-bold text-white">Montema Admin</h1>
+        <div onClick={() => navigate('/')} className="flex items-center gap-2 cursor-pointer">
+          <div className="bg-[#D4AF37] p-1 rounded-md">
+            <Hammer className="w-4 h-4 text-[#0A0F1C]" />
+          </div>
+          <h1 className="text-xl font-bold text-white">Montema Admin</h1>
+        </div>
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
           className="text-white p-2"

@@ -56,29 +56,24 @@ export default function PrivacyPolicy({ onNavigate }: PolicyPageProps) {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-600 font-bold">•</span>
-                    <span>Adresse email</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-blue-600 font-bold">•</span>
                     <span>Numéro de téléphone</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-600 font-bold">•</span>
-                    <span>Adresse postale</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-blue-600 font-bold">•</span>
-                    <span>Messages et commentaires</span>
+                    <span>Contenu des messages envoyés via le formulaire</span>
                   </li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-2">Informations collectées automatiquement:</h3>
+                <p className="text-slate-700 mb-2">
+                  Notre hébergeur collecte automatiquement des logs serveurs standard pour des raisons de sécurité et de maintenance :
+                </p>
                 <ul className="space-y-2 text-slate-700 ml-4">
                   <li className="flex gap-3">
                     <span className="text-blue-600 font-bold">•</span>
-                    <span>Adresse IP</span>
+                    <span>Adresse IP (anonymisée ou conservée temporairement)</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-600 font-bold">•</span>
@@ -86,15 +81,7 @@ export default function PrivacyPolicy({ onNavigate }: PolicyPageProps) {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-blue-600 font-bold">•</span>
-                    <span>Pages consultées et durée de visite</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-blue-600 font-bold">•</span>
-                    <span>Données de localisation</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-blue-600 font-bold">•</span>
-                    <span>Données analytiques</span>
+                    <span>Heure et date de connexion</span>
                   </li>
                 </ul>
               </div>
@@ -118,15 +105,7 @@ export default function PrivacyPolicy({ onNavigate }: PolicyPageProps) {
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-600 font-bold">•</span>
-                <span>Personnaliser votre expérience utilisateur</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-blue-600 font-bold">•</span>
                 <span>Communiquer avec vous</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-blue-600 font-bold">•</span>
-                <span>Vous envoyer des informations pertinentes</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-600 font-bold">•</span>
@@ -189,12 +168,11 @@ export default function PrivacyPolicy({ onNavigate }: PolicyPageProps) {
           <section className="bg-slate-50 rounded-lg p-6">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Contact & Droits RGPD</h2>
             <p className="text-slate-700 leading-relaxed mb-4">
-              Pour exercer vos droits ou pour toute question concernant votre vie privée, veuillez nous contacter:
+              Pour exercer vos droits ou pour toute question concernant votre vie privée, veuillez nous contacter via notre page de contact ou :
             </p>
             <div className="text-slate-700 space-y-2">
-              <p><strong>Email:</strong> contact@montema.com</p>
-              <p><strong>Téléphone:</strong> +33 (0) 1 23 45 67 89</p>
-              <p><strong>Adresse:</strong> 123 Rue de Montema, 75000 Paris, France</p>
+              <p><strong>Email:</strong> contact@montema.fr</p>
+              <p><strong>Adresse:</strong> 12 Rue de l'Artisanat, 76100 Rouen</p>
             </div>
           </section>
         </div>

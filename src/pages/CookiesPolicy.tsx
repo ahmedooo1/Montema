@@ -71,66 +71,48 @@ export default function CookiesPolicy({ onNavigate }: PolicyPageProps) {
 
           {/* Types of cookies */}
           <section>
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Types de Cookies que nous utilisons</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Cookies que nous utilisons</h2>
             
             <div className="space-y-6">
               {/* Necessary Cookies */}
               <div className="border-l-4 border-blue-600 pl-4">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">Cookies Nécessaires</h3>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">Cookies Techniques / Nécessaires</h3>
                 <p className="text-slate-700 mb-3">
-                  Ces cookies sont essentiels au fonctionnement de notre site web. Ils vous permettent d'accéder à nos services et d'utiliser les fonctionnalités principales. Sans ces cookies, certaines parties du site pourraient ne pas fonctionner correctement.
+                  Nous utilisons exclusivement des cookies techniques (ou stockage local) indispensables au bon fonctionnement du site. Ils permettent de :
                 </p>
+                <ul className="list-disc ml-5 text-slate-700 mb-2">
+                  <li>Mémoriser votre choix concernant les cookies (acceptation ou refus).</li>
+                  <li>Sécuriser l'accès à l'espace administrateur (si vous êtes connecté en tant que gestionnaire).</li>
+                </ul>
                 <p className="text-sm text-slate-600 italic">
-                  Ces cookies sont toujours activés, car ils sont nécessaires au fonctionnement de base du site.
-                </p>
-              </div>
-
-              {/* Analytics Cookies */}
-              <div className="border-l-4 border-green-600 pl-4">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">Cookies d'Analyse</h3>
-                <p className="text-slate-700 mb-3">
-                  Ces cookies nous aident à comprendre comment les visiteurs utilisent notre site web. Ils collectent des informations anonymes sur le nombre de visiteurs, les pages visitées, et le comportement général de l'utilisateur. Ces données nous permettent d'améliorer nos services et votre expérience utilisateur.
-                </p>
-                <p className="text-sm text-slate-600">
-                  Exemples : Google Analytics, Hotjar
-                </p>
-              </div>
-
-              {/* Marketing Cookies */}
-              <div className="border-l-4 border-purple-600 pl-4">
-                <h3 className="text-xl font-semibold text-slate-900 mb-2">Cookies de Marketing</h3>
-                <p className="text-slate-700 mb-3">
-                  Ces cookies sont utilisés pour suivre votre activité sur plusieurs sites web et afficher des publicités pertinentes en fonction de vos intérêts. Ils nous aident à comprendre votre parcours client et à optimiser nos campagnes publicitaires.
-                </p>
-                <p className="text-sm text-slate-600">
-                  Exemples : Facebook Pixel, Google Ads
+                  Ces cookies ne stockent aucune donnée personnelle identifiable et ne sont pas utilisés à des fins publicitaires.
                 </p>
               </div>
             </div>
+            
+            <p className="mt-6 text-slate-700">
+              <strong>Note importante :</strong> À ce jour, ce site n'utilise <u>aucun</u> cookie publicitaire, ni aucun traceur d'analyse d'audience (type Google Analytics ou Facebook Pixel). Votre navigation reste donc privée.
+            </p>
           </section>
 
           {/* Your choices */}
           <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Vos Choix</h2>
             <p className="text-slate-700 leading-relaxed mb-4">
-              Vous avez le contrôle total sur les cookies que vous souhaitez accepter. Vous pouvez:
+              Vous avez le contrôle total sur les cookies que vous souhaitez accepter. Lors de votre première visite, vous pouvez :
             </p>
             <ul className="space-y-2 text-slate-700">
               <li className="flex gap-3">
                 <span className="text-blue-600 font-bold">•</span>
-                <span>Accepter tous les cookies en cliquant sur "Accepter tout"</span>
+                <span>Accepter l'ensemble des cookies en cliquant sur "Accepter"</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-600 font-bold">•</span>
-                <span>Refuser les cookies non-nécessaires en cliquant sur "Refuser tout"</span>
+                <span>Refuser les cookies non-nécessaires en cliquant sur "Refuser"</span>
               </li>
               <li className="flex gap-3">
                 <span className="text-blue-600 font-bold">•</span>
-                <span>Modifier vos préférences à tout moment</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-blue-600 font-bold">•</span>
-                <span>Effacer les cookies dans les paramètres de votre navigateur</span>
+                <span>Effacer les cookies à tout moment dans les paramètres de votre navigateur</span>
               </li>
             </ul>
           </section>

@@ -8,7 +8,6 @@ import ServicesManagement from './pages/ServicesManagement';
 import GalleryManagement from './pages/GalleryManagement';
 import ContactsManagement from './pages/ContactsManagement';
 import LandingPage from './LandingPage';
-import FAQPage from './pages/FAQPage';
 import CookiesPolicy from './pages/CookiesPolicy';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -43,13 +42,7 @@ function App() {
           {/* Public Route - Landing Page */}
           <Route 
             path="/" 
-            element={
-              currentPage === 'home' ? (
-                <LandingPage onNavigate={handleNavigate} />
-              ) : (
-                <FAQPage onNavigate={handleNavigate} scrollToSection={scrollToSection} />
-              )
-            } 
+            element={<LandingPage onNavigate={handleNavigate} />} 
           />
 
           {/* Policy Pages */}

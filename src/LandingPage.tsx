@@ -30,8 +30,7 @@ import {
   Facebook
 } from 'lucide-react'
 import './App.css'
-import ChatbotFAQ from './components/ChatbotFAQ'
-
+import Footer from './components/Footer'
 interface LandingPageProps {
   onNavigate: (page: string) => void;
 }
@@ -756,93 +755,7 @@ function App({ onNavigate }: LandingPageProps) {
         </div>
       </section>
 
-      <footer className="bg-stone-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-2 mb-6">
-                <Hammer className="w-8 h-8 text-amber-500" />
-                <span className="text-3xl font-bold tracking-tighter">MONTEMA</span>
-              </div>
-              <p className="text-stone-400 max-w-sm mb-6">
-                Menuiserie d'excellence à Rouen. Nous transformons vos idées en bois véritable pour créer des espaces de
-                vie uniques et fonctionnels.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-stone-800 border border-stone-700 flex items-center justify-center hover:bg-amber-700 transition-colors cursor-pointer text-stone-400 hover:text-white"
-                  title="Instagram"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-stone-800 border border-stone-700 flex items-center justify-center hover:bg-amber-700 transition-colors cursor-pointer text-stone-400 hover:text-white"
-                  title="Facebook"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a
-                  href="mailto:contact@montema.fr"
-                  className="w-10 h-10 rounded-full bg-stone-800 border border-stone-700 flex items-center justify-center hover:bg-amber-700 transition-colors cursor-pointer text-stone-400 hover:text-white"
-                  title="Email"
-                >
-                  <Mail className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-lg mb-6">Services</h4>
-              <ul className="space-y-4 text-stone-400">
-                <li onClick={() => scrollToSection('services')} className="hover:text-amber-500 cursor-pointer transition-colors">Cuisines</li>
-                <li onClick={() => scrollToSection('services')} className="hover:text-amber-500 cursor-pointer transition-colors">Dressings</li>
-                <li onClick={() => scrollToSection('realisations')} className="hover:text-amber-500 cursor-pointer transition-colors">Meubles TV</li>
-                <li onClick={() => scrollToSection('services')} className="hover:text-amber-500 cursor-pointer transition-colors">Bureaux</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-lg mb-6">Informations</h4>
-              <ul className="space-y-4 text-stone-400">
-                <li onClick={() => scrollToSection('about')} className="hover:text-amber-500 cursor-pointer transition-colors">À propos</li>
-                <li onClick={() => onNavigate('faq')} className="hover:text-amber-500 cursor-pointer transition-colors">FAQ</li>
-                <li onClick={() => scrollToSection('realisations')} className="hover:text-amber-500 cursor-pointer transition-colors">Réalisations</li>
-                <li onClick={() => scrollToSection('contact')} className="hover:text-amber-500 cursor-pointer transition-colors">Contact</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-lg mb-6">Légal</h4>
-              <ul className="space-y-4 text-stone-400">
-                <li onClick={() => navigate('/politique-confidentialite')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Confidentialité</li>
-                <li onClick={() => navigate('/politique-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Cookies</li>
-                <li onClick={() => navigate('/parametres-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Gérer les Cookies</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pt-12 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-stone-500 text-sm">© 2024 Montema Menuiserie. Tous droits réservés.</p>
-            <div className="flex gap-8 text-stone-500 text-sm">
-              <span className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-amber-500" /> Artisan Qualifié
-              </span>
-              <span className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-amber-500" /> Garantie 10 ans
-              </span>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      {/* Chatbot FAQ */}
-      <ChatbotFAQ />
+      <Footer onNavigate={onNavigate} scrollToSection={scrollToSection} />
     </div>
   )
 }
