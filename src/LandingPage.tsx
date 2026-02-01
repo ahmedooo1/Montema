@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   Hammer,
   Bed,
@@ -72,6 +73,7 @@ const navLinks = [
 ]
 
 function App({ onNavigate }: LandingPageProps) {
+  const navigate = useNavigate()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeFilter, setActiveFilter] = useState('Tous')
@@ -799,9 +801,9 @@ function App({ onNavigate }: LandingPageProps) {
             <div>
               <h4 className="font-bold text-lg mb-6">Légal</h4>
               <ul className="space-y-4 text-stone-400">
-                <li onClick={() => onNavigate('politique-confidentialite')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Confidentialité</li>
-                <li onClick={() => onNavigate('politique-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Cookies</li>
-                <li onClick={() => onNavigate('parametres-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Gérer les Cookies</li>
+                <li onClick={() => navigate('/politique-confidentialite')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Confidentialité</li>
+                <li onClick={() => navigate('/politique-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Politique de Cookies</li>
+                <li onClick={() => navigate('/parametres-cookies')} className="hover:text-amber-500 cursor-pointer transition-colors">Gérer les Cookies</li>
               </ul>
             </div>
           </div>
