@@ -25,7 +25,9 @@ import {
   ThumbsUp,
   HelpCircle,
   ChevronDown,
-  ZoomIn
+  ZoomIn,
+  Instagram,
+  Facebook
 } from 'lucide-react'
 import './App.css'
 import ChatbotFAQ from './components/ChatbotFAQ'
@@ -767,14 +769,31 @@ function App({ onNavigate }: LandingPageProps) {
                 vie uniques et fonctionnels.
               </p>
               <div className="flex gap-4">
-                {[1, 2, 3].map((item) => (
-                  <div
-                    key={item}
-                    className="w-10 h-10 rounded-full bg-stone-800 border border-stone-700 flex items-center justify-center hover:bg-amber-700 transition-colors cursor-pointer text-stone-400 hover:text-white"
-                  >
-                    Insta
-                  </div>
-                ))}
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-stone-800 border border-stone-700 flex items-center justify-center hover:bg-amber-700 transition-colors cursor-pointer text-stone-400 hover:text-white"
+                  title="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-stone-800 border border-stone-700 flex items-center justify-center hover:bg-amber-700 transition-colors cursor-pointer text-stone-400 hover:text-white"
+                  title="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a
+                  href="mailto:contact@montema.fr"
+                  className="w-10 h-10 rounded-full bg-stone-800 border border-stone-700 flex items-center justify-center hover:bg-amber-700 transition-colors cursor-pointer text-stone-400 hover:text-white"
+                  title="Email"
+                >
+                  <Mail className="w-5 h-5" />
+                </a>
               </div>
             </div>
 
